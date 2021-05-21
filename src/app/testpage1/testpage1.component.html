@@ -1,0 +1,26 @@
+<p>Test Page 1 works!</p>
+
+<button type="button" class="btnpad btn btn-danger" (click)="logoutFunction();">LOGOUT</button>
+
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr class="text-primary">
+        <th scope="col">ID</th>
+        <th scope="col">Text</th>
+        <th scope="col">Num</th>
+        <th scope="col">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let dataContent of dataContent">
+        <td class=" align-middle">{{ dataContent?.ID }}</td>
+        <td class=" align-middle">{{ dataContent?.TEXT }}</td>
+        <td class=" align-middle">{{ dataContent?.NUM }}</td>
+        <td class=" align-middle">{{ dataContent?.STATUS }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
